@@ -14,6 +14,17 @@ function decodeStringFromCode(codeArr = ''){
 
 }
 
+function convertUTF16ToAlphabet(encodedText = '') {
+    let result = '';
+    for (let i = 0; i < encodedText.length; i += 4) {
+        const hexCode = encodedText.substr(i, 4);
+        const charCode = parseInt(hexCode, 16);
+        const char = String.fromCharCode(charCode);
+        result += char;
+    }
+    return result;
+}
+
 decode.addEventListener('click', () => {
-    decodeMessage.value = decodeStringFromCode(decodeMessage.value).trim();
+    decodeMessage.value = convertUTF16ToAlphabet(decodeMessage.value).trim();
 })

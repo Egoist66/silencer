@@ -15,7 +15,8 @@
     }
   ],
   "require": {
-    "phpmailer/phpmailer": "^6.9"
+    "phpmailer/phpmailer": "^6.9",
+    "ext-mbstring": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"

@@ -11,14 +11,14 @@ class EmailController extends Controller
     {
         if (request('post')) {
             $data = json_decode(file_get_contents('php://input'), true);
-
+            $coded = convertAlphabetToUTF16($data['message']);
 
             $isSent = EmailClient::send(
                 $data['fromName'],
                 $data['to'],
                 $data['toName'],
                 $data['subject'],
-                $data['message']
+                $coded
             );
             if ($isSent) {
                 echo 'Email sent successfully';

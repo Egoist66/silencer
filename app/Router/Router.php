@@ -18,7 +18,8 @@ class Router
             case '/':
 
                 HomeController::index();
-                switch ($action) {
+
+            switch ($action) {
                     case 'store':
                         EmailController::send();
                         break;

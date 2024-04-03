@@ -12,5 +12,6 @@ return [
     "error" => require_once __DIR__ . '/utils/report-error.php',
     "old" => require_once __DIR__ . '/utils/old.php',
     "session" => require_once __DIR__ . '/utils/session.php',
+    "coverAlphabetToUTF16" => require_once __DIR__ . '/utils/convertAlphabetToUTF16.php',
     
 ];

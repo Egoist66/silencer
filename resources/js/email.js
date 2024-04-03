@@ -14,7 +14,7 @@ class Email  {
                     to: Email.form.to.value,
                     toName: Email.form.toName.value,
                     subject: Email.form.subject.value,
-                    message: JSON.stringify(transformStringToCode(Email.form.message.value))
+                    message: Email.form.message.value
                 })
             })
 
@@ -26,6 +26,7 @@ class Email  {
 
                 await delay(1000)
                 Email.button.textContent = 'Send'
+                console.log(data)
 
             }
             else {
