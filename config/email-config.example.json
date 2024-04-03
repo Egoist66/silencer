@@ -1,0 +1,13 @@
+{
+  "server": {
+    "debug": "SMTP::DEBUG_SERVER",
+    "host": "smtp.yandex.ru",
+    "smtp_auth": true,
+    "username": "test",
+    "password": "test",
+    "port": 465
+  },
+  "mail_from": "test"
+}
+
+

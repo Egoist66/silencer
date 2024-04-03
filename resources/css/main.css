@@ -1,0 +1,21 @@
+body,html {
+    background-color: #1e293b;
+
+}
+
+.form-card {
+    margin-top:40px ;
+    margin-bottom: 40px;
+}
+
+.error-submit {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
